@@ -52,15 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      drawer:
-          // CustomDrawer(),
+      drawer: //const CustomDrawer(),
           _customDrawer(context),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // _customText(),
-            CustomText(),
+            _customText(),
+            // const CustomText(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
@@ -114,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Text _customText() {
-    print("Text is rebuilding");
+    // print("Text is rebuilding");
     return Text(
       'You have pushed the button this many times:',
     );
